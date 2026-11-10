@@ -1,7 +1,8 @@
-<<<<<<< HEAD
-# multi-agent-financial-research-system
-=======
 # Multi-Agent Financial Research System
+
+An AI-powered financial research platform that uses specialized AI agents to analyze company financial documents.
+
+## Project Overview
 
 An AI-powered financial research platform that uses
 specialized AI agents to analyze company financial documents.
@@ -40,4 +41,4 @@ The system aims to:
 ## Developer
 
 Abhishek Swami
->>>>>>> 2cba1e7 (chore: setup React frontend with Vite)
+
