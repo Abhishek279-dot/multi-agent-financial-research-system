@@ -53,6 +53,7 @@ function Sidebar({ activePage, onNavigate }) {
   ];    
 
   return (
+    
     <aside className="sidebar">
 
       {/* Application Logo */}
@@ -84,7 +85,6 @@ function Sidebar({ activePage, onNavigate }) {
               }`}
               onClick={() => onNavigate(item.name)}
             >
-                
               <Icon size={19} />
               <span>{item.name}</span>
             </button>

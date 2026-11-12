@@ -123,3 +123,189 @@
   color: #94A3B8;
   font-size: 13px;
 }
+
+
+
+
+
+/* Dashboard Statistics */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: #101624;
+  border: 1px solid #263247;
+  border-radius: 12px;
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  position: relative;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon.blue {
+  color: #60A5FA;
+  background: #1E3A5F;
+}
+
+.stat-icon.green {
+  color: #34D399;
+  background: #064E3B;
+}
+
+.stat-icon.orange {
+  color: #FBBF24;
+  background: #78350F;
+}
+
+.stat-icon.purple {
+  color: #A78BFA;
+  background: #4C1D95;
+}
+
+.stat-card p {
+  color: #94A3B8;
+  font-size: 12px;
+  margin: 0 0 7px;
+}
+
+.stat-card h2 {
+  color: #F8FAFC;
+  font-size: 25px;
+  margin: 0;
+}
+
+.stat-arrow {
+  color: #64748B;
+  margin-left: auto;
+  align-self: flex-start;
+}
+
+
+/* Recent Activity */
+
+.activity-section {
+  background: #101624;
+  border: 1px solid #263247;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  color: #94A3B8;
+}
+
+.section-heading h2 {
+  color: #F8FAFC;
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.section-heading p {
+  color: #94A3B8;
+  font-size: 12px;
+  margin: 0;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 17px 0;
+  border-top: 1px solid #263247;
+}
+
+.activity-company {
+  flex: 1;
+}
+
+.activity-company h3 {
+  color: #F8FAFC;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+.activity-company p {
+  color: #94A3B8;
+  font-size: 12px;
+  margin: 0;
+}
+
+.activity-date {
+  color: #94A3B8;
+  font-size: 12px;
+}
+
+.activity-status {
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.activity-status.completed {
+  color: #34D399;
+  background: #064E3B;
+}
+
+.activity-status.processing {
+  color: #FBBF24;
+  background: #78350F;
+}
+
+
+/* Responsive Dashboard */
+
+@media (max-width: 1100px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .page-content {
+    padding: 18px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-section {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .activity-item {
+    flex-wrap: wrap;
+  }
+
+  .activity-date {
+    margin-left: auto;
+  }
+}
